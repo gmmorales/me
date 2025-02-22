@@ -29,7 +29,7 @@ const About = () => {
             </h1>
             <div>
               <p className="about-description">
-                Hola, mi nombre es Daniel Briceño, Full Stack Developer.
+                Hola, mi nombre es Gustavo Morales, Full Stack Developer.
               </p>
 
               <p className="about-description">
