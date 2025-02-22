@@ -1,6 +1,6 @@
 {
-  "homepage": "https://dbriceno10.github.io/portfolio",
-  "name": "dbriceno10-portafolio",
+  "homepage": "https://{github_id}.github.io/{github_repo}",
+  "name": "gmmorales-portafolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,8 +17,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",    
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -57,6 +57,6 @@
     "and",
     "more..."
   ],
-  "author": "Daniel Briceño <daniel.b100726@gmail.com>",
+  "author": "Gustavo M. Morales <gustavom.morales@gmail.com>",
   "license": "ISC"
 }
