@@ -1,6 +1,7 @@
 # Portafolio digital Creado con React
 
-Hola, bienvenidos al repositorio de mi portafolio digital.
+Este portfolio digital desarrollado en React.js fue creado a partir del la guía de Daniel Briceño
+https://github.com/dbriceno10
 
 ## Comenzando 🚀
 
@@ -28,7 +29,7 @@ El proyecto tiene una pequeña comfiguración para hacer el despliegue del proye
 
 ## Despliegue 📦
 
-Podrás visitar mi portafolio en el siguiente enlace: https://dbriceno10.github.io/portfolio
+Podrás visitar mi portafolio en el siguiente enlace: https://gmmorales.github.io/portfolio
 
 ## Construido con 🛠️
 
@@ -39,4 +40,4 @@ El formulario de contacto se conecta a un api externa para guardar los datos en 
 <img src="./public/home-portfolio.png"/>
 
 ---
-⌨️ con ❤️ por [dbriceno10](https://github.com/dbriceno10) 😊
+Gustavo M. Morales 😊
