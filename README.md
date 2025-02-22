@@ -40,4 +40,4 @@ El formulario de contacto se conecta a un api externa para guardar los datos en 
 <img src="./public/home-portfolio.png"/>
 
 ---
-Gustavo M. Morales 😊
+Gustavo M. Morales
