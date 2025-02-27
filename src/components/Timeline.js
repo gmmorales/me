@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
-import Skills from "./Skills";
 import userPhoto from "../assets/image/fondo-blanco.png";
-import "./styles/About.css";
-import CV from "../assets/cv/Gustavo_Morales_CV.pdf";
+import "./styles/Timeline.css";
 
 const Timeline = () => {
   const handleScrollToTop = () => {
@@ -24,7 +22,7 @@ const Timeline = () => {
             <img className="s-about__pic" src={userPhoto} alt="user avatar" />
           </div>
           <div className="column large-9 tab-12 s-about__content">
-            <h1 className="timeline-me">
+            <h1 className="about-me">
               <span className="timeline-description font-500">Timeline</span>
             </h1>
             <div>
