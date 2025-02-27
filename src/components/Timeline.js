@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import userPhoto from "../assets/image/fondo-blanco.png";
 import "./styles/Timeline.css";
 
 const Timeline = () => {
@@ -18,79 +17,153 @@ const Timeline = () => {
     <React.Fragment>
       <section id="timeline" className="s-about target-section">
         <div className="row">
-          <div className="column large-3 tab-12">
-            <img className="s-about__pic" src={userPhoto} alt="user avatar" />
-          </div>
           <div className="column large-9 tab-12 s-about__content">
-            <h1 className="about-me">
-              <span className="timeline-description font-500">Timeline</span>
+            <h1 className="timeline-me">
+              <span className="timeline-description font-500">Experiencia laboral</span>
             </h1>
             <div>
+              <h2 className="timeline-me">
+                <span className="timeline-description font-500">
+                  Desarrollador full stack jr
+                </span>
+              </h2>
               <p className="timeline-description">
-                Hola, mi nombre es Gustavo Morales, Full Stack Developer.
+                Neoris - sept. 2020 - actualidad. Desarrollador en Banco Macro Julio 2024 -
+                Actualmente Descripción: Desarrollador en célula externa para el proyecto Onboarding.
+                Tareas: Desarrollador Backend en las siguientes tecnologías: Lenguajes de programación: Java 15.
+                Frameworks: Spring Boot, Hibernate, JUnit 4.
+                Herramientas: Git, Bitbucket, Stash, Jira, Jenkins, contenedores virtuales (Docker/Podman), Postman,
+                GitLab. Desarrollador en AGEA 2020 - Marzo 2024 Descripción: Desarrollador para aplicaciones del sector HUB.
+                Tareas: Desarrollador Backend en las siguientes tecnologías:
+                Lenguajes de programación: Java 6 / Java 8, Python 3, JavaScript, HTML5, CSS3.
+                Frameworks: Spring Boot, Hibernate, JUnit 4, Flask, Jinja2, Web2py, Tkinter, ReactJS, jQuery, Bootstrap.
+                Herramientas: Git, Bitbucket, Stash, Jira, Jenkins, contenedores virtuales (Docker/Podman),
+                uWSGI 2.0, Postman.
               </p>
-
+              <h2 className="timeline-me">
+                <span className="timeline-description font-500">
+                  Desarrollador full stack jr
+                </span>
+              </h2>
               <p className="timeline-description">
-                Egresado del Instituto Universitario de la Policía Federal Argentina
-                con el título de Ingeniero en Telecomunicaciones. Cuento con más de trece años
-                de experiencia en el campo de IT y las telecomunicaciones. A lo largo de mi
-                carrera, he trabajado en diversas empresas, ocupando distintos roles. 
-                Actualmente, me desempeño como Desarrollador Full Stack en una compañía
-                internacional, Neoris.
+                Daitek - mar. 2019 - sept. 2020. Desarrollador Java jr. - Frameworks: Spring boot, Hibernate,
+                JUnit 4. Desarrollador Python jr. -
+                Frameworks: TkInter, WEB2PY. Herramientas: Git, Sonarqube, Jenkies, Contenedores virtuales
+                (Docker/podman), Redmine, postman. Ingeniero de postventa Witbe technologies.
+                Redshift Network technologies.
               </p>
-
+              <h2 className="timeline-me">
+                <span className="timeline-description font-500">
+                  Hardware Engineer
+                </span>
+              </h2>
               <p className="timeline-description">
-                La comunicación y el trabajo en equipo es para mí esencial para
-                poder crecer como desarrollador. Soy proactivo y metódico,
-                siempre busco nuevos retos y me adapto fácilmente a los cambios,
-                estoy abierto a aprender nuevas tecnologías y lenguajes.
+                Hynet S.A. Feb. 2016 - feb. 2019 Network Engineer: Juniper EX Series Ethernet Switches.
+                Brocade ServerIron ADX Switches. Security Analyst: Bluecoat ProxySG series.
+                Symantec WAN Optimization - PacketShaper: PacketShaper S200/S400/S500.
+                Accedian Networks products Infoblox Trinzic DDI Appliances.
               </p>
-
-              <p className="about-description">
-                Técnologías: Java, Spring boot, python, HTML, CSS, JavaScript, React JS/React Native, Next
-                JS, TypeScript, Bootstrap, SQL, PostgreSQL, Figma, Git.
+              <h2 className="timeline-me">
+                <span className="timeline-description font-500">
+                  Voip engineer
+                </span>
+              </h2>
+              <p className="timeline-description">
+                TecnoVoz S.A. Mar. 2013 - ene. 2016. Soporte técnico especializado en telefonía IP.
+                Seguimiento, resolución de reclamos o incidencias técnicas.
+                Asistencia técnica en sitio. Manejo del sistema de tickets: Vtiger CRM.
+                Instalación, configuración y puesta en marcha de la plataforma Approach.
+                Soporte de las aplicaciones Approach. Capacitador técnico. Instalación y
+                configuración de Gateways IP (plataforma asterisk). Instalación y
+                configuración de Gateways Telular (HG). Análisis, detección de fallas sobre
+                telefonía IP / TDM.
+              </p>
+              <h2 className="timeline-me">
+                <span className="timeline-description font-500">
+                  Operador NOC
+                </span>
+              </h2>
+              <p className="timeline-description">
+                Claro S.A. Abr. 2012 - jun. 2012. Área: Dirección de Mercado Empresarial NOC Empresarial
+                Tecnologías: ATM (Lucent, Alcatel, Cisco , Newbridge ); IP (Cisco, Juniper, Huawei);
+                SDH (Alcatel, Huawei, Lucent, Nortel , GPON);
+                Wireless (LMDS, Radios PaP Harrys , Huawei , Aimux , Canopy, Wimax D , Wimax E ,
+                Wimax 4 Motion, Wi-Fi, WLL , 3G , VSAT) , HFC. Tareas: seguimiento y
+                resolución de reclamos o incidencias, coordinación y asistencia
+                técnica de mantenimientos para servicios de clientes
+                (Internet, RPV, Enlaces transparentes, Lan-to-Lan , Telefonía ).
+              </p>
+              <h2 className="timeline-me">
+                <span className="timeline-description font-500">
+                  Operador NOC
+                </span>
+              </h2>
+              <p className="timeline-description">
+                Huawei feb. 2011 - abr. 2012. Ligado al proyecto Movistar. Monitoreo de la Red 3G y
+                GSM de Movistar: NOA, SUR, CUYO y ANDINA. Dispatcher.
+                Coordinación de asistencia técnica al sitio. Seguimiento de casos.
+                Manejo del sistema de gestión de tickets de Movistar, plataforma BPM.
+                Manejo del sistema de monitoreo, plataforma SGA.
+              </p>
+              <h2 className="timeline-me">
+                <span className="timeline-description font-500">
+                  Operador NOC
+                </span>
+              </h2>
+              <p className="timeline-description">
+                Metrotel jul. 2010 - feb. 2011. Operador NOC / Soporte Corporativo:
+                Atención a grandes clientes, resolución de fallas. Monitoreo proactivo de la red,
+                nodos y los enlaces corporativos mediante herramientas de administración y alarmas,
+                SNMPc Network manager, Cacti. Manejo y administración de equipamiento cisco: Swiches,
+                routers. Administración y control de la red SDH, manejo de de multiplexores Asga,
+                Chasis de Fibra: Tredent y Asga; Flex, módems ópticos, Raisecom, Alcatel-Lucent y
+                Software de gestión. Análisis, control, detección de fallas y cortes de FO
+                (fibra óptica). Administración y configuración de Swiches Planet. Monitoreo y
+                control de equipos Microtik para enlaces radius. Control de de la red de Banda Ancha
+                ADSL, utilización de módems y equipos DSLAM. Instalación y configuración de UPS APC.
+                Control de los equipos del Datacenter.
+              </p>
+              <h2 className="timeline-me">
+                <span className="timeline-description font-500">
+                  Operador NOC
+                </span>
+              </h2>
+              <p className="timeline-description">
+                Asignet. Oct. 2009 - jul. 2010. Proyecto I-ROUTING: Ruteo de llamadas de celulares a
+                través de internet. Operador NOC / Help desk. Soporte Técnico PBX Asterisk.
+                Troubleshooting básico y soporte a usuarios. Monitoreo y control de Tramas E1.
+                Administración de Equipos GATEWAY-GSM, Servidores LINUX. Control de Tráfico IP.
+                Administración y configuración sistema de Monitoreo NAGIOS y CACTI.
+              </p>
+              <h2 className="timeline-me">
+                <span className="timeline-description font-500">
+                  Operador NOC
+                </span>
+              </h2>
+              <p className="timeline-description">
+                Asignet. Jun. 2008 - jun. 2009. Operador NOC. Redes. Atención y resolución de fallas.
+                Soporte técnico de 2do nivel. Control de datos, Uso de VPNs.
+                Configuración de conversores seriales (PBX2NET, EXEMYS).
+                Manejo Básico de PBX (Meridiam, Avaya, Ericcson, Asterisk).
+                Análisis y diagnósticos de Scripts. Monitoreo de Redes Mediante el sistema Nagios y CACTI.
+                Control de servidores.
+              </p>
+              <h2 className="timeline-me">
+                <span className="timeline-description font-500">
+                  Auxiliar especializado
+                </span>
+              </h2>
+              <p className="timeline-description">
+                NSX SA. oct. 2007 - mar. 2008. Auxiliar Especializado. Sistemas.
+                Técnico en programación en informática. Proyecto en el HSBC Arg. Migración de
+                usuarios de correo electrónico Lotus Notes. Proyecto en Conarco Arg.
+                Actualización de versión de correo electrónico Lotus Notes.
+                Capacitación dictada a los usuarios para la utilización de la nueva versión.
               </p>
             </div>
-            <hr size="8px" color="white" />
-            <h2 className="about-me">
-              <span className="about-description font-500">
-                ¿Qué puedo hacer?
-              </span>
-            </h2>
-            <br />
-            <h3 className="about-me center font-500">Front-End</h3>
-            <p className="about-description">
-              Como desarrollador frontend, tengo experiencia en el manejo de
-              HTML y CSS, además del manejo de frameworks y liberías,
-              especialmente React JS. He trabajado en proyectos
-              de escala mediana y grandes, implementando soluciones de código
-              eficientes, trabajado con arquitecturas de software escalables y
-              fácilmente mantenibles.
-            </p>
-            <br />
-            <h3 className="about-me center font-500">Back-End</h3>
-            <p className="about-description">
-              Utilizando Java con Spring boot, python con Flask , puedo crear
-              rutas para APIs REST, protegerlas e implementar bases de datos SQL. 
-              De igualmanera he trabajado con arquitecturas de software escalables
-              y mantenibles, implementando módulos manteniendo separadas las distintas
-              capas de un proyecto.
-            </p>
-            <p className="about-description">
-              He trabajado en proyectos medianos y grandes, desde su
-              planteamiento a su ejecución final, teniendo cada día la
-              oportunidad de aprender cada día acerca de como ayudar al cliente
-              a desarrollar su producto deseado resolviendo cualquier problema
-              presentado. He tenido la oportunidad de trabajar en el desarrollo
-              de aplicaciones bancarias, empleando las mejores prácticas,
-              escribiendo código limpio, legible y mantenible, siempre teniendo
-              en mente optimizar al máximo el rendimiento del prouducto final.
-            </p>
-
-            <hr />            
           </div>
         </div>
-      </section>      
+      </section>
     </React.Fragment>
   );
 };
