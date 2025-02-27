@@ -89,23 +89,10 @@ const Timeline = () => {
               en mente optimizar al máximo el rendimiento del prouducto final.
             </p>
 
-            <hr />
-            <div className="row s-about__content-bottom">
-              <div className="column w-1000-stack cv">
-                <a
-                  id="btn-donwload-cv"
-                  className="btn btn--download btn-donwload"
-                  href={CV}
-                  download="Gustavo_Morales_CV"
-                >
-                  Descargar CV
-                </a>
-              </div>
-            </div>
+            <hr />            
           </div>
         </div>
-      </section>
-      <Skills />
+      </section>      
     </React.Fragment>
   );
 };

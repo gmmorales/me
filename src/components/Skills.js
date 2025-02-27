@@ -10,6 +10,8 @@ import nodeStiker from "../assets/image/nodejs-icon-logo-svg-vector.svg";
 import typescriptStiker from "../assets/image/typescript-programming-language.svg";
 import psqlStiker from "../assets/image/postgresql-icon.svg";
 import bootstrapStiker from "../assets/image/bootstrap-5-1.svg";
+import javaStiker from "../assets/image/java.png"
+import springbootStiker from "../assets/image/springboot.png"
 
 const Skills = () => {
   return (
@@ -23,6 +25,18 @@ const Skills = () => {
         <div className="column large-10 tab-12">
           <div className="resume-block">
             <ul className="skill-bars-fat skill-grid">
+              <Skill
+                skill="JAVA"
+                src={javaStiker}
+                title="JAVA"
+                alt="java-logo"
+              />
+              <Skill
+                skill="SPRINGBOOT"
+                src={springbootStiker}
+                title="SPRINGBOOT"
+                alt="springboot-logo"
+              />
               <Skill
                 skill="HTML"
                 src={htmlStiker}
