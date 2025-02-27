@@ -33,7 +33,8 @@ const Hero = () => {
               <span className="font-500">Gustavo Morales</span>
             </h1>
             <h3>
-              <span>Full Stack Developer</span>
+              <span>Telecomunication engineer ▪︎ Data Scientist ▪︎ Jr full stack developer</span>              
+              <br />
               <br />
               <span>| Java | Python | JavaScript | React JS | Node | MySQL | PostgreSQL | SCRUM | Spring Boot |</span>
             </h3>
