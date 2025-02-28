@@ -22,6 +22,11 @@ const Header = () => {
                 Timeline
               </NavLink>
             </li>
+            <li id="education">
+              <NavLink activeClassName="current" to="/education">
+                Education & Certifications 
+              </NavLink>
+            </li>
             <li id="portfolio">
               <NavLink activeClassName="current" to="/portfolio">
                 Portfolio
