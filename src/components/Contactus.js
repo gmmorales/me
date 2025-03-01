@@ -46,8 +46,7 @@ const Contactus = () => {
             <span className="black-background">
               {/* Let's start a new project together, I want to collaborate to
                 materialize that idea into a successful project. */}
-              Si requiere asistencia técnica y
-              consultoría puede contactarse a través 
+              Si requiere asistencia técnica o consultoría, puede contactarme a través
               de mis redes sociales o dejarme un mensaje.
             </span>
           </h4>
