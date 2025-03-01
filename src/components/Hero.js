@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import logoGithub from "../assets/image/github (3).png";
+import logoGitlab from "../assets/image/gitlab.png";
 import logoLinkedin from "../assets/image/linkedin.png";
 import logoTwitter from "../assets/image/x.png";
 import HeroButton from "./HeroButton";
@@ -7,6 +8,7 @@ import HeroSocial from "./HeroSocial";
 import "./styles/Hero.css";
 const linkedinLink = "https://www.linkedin.com/in/ing-gustavo-mauricio-morales-77193022/";
 const gihubLink = "https://github.com/gmmorales";
+const gitlabLink= "https://gitlab.com/gmmorales"
 const twitterLink = "https://x.com/GustavoLepton";
 
 const Hero = () => {
@@ -50,6 +52,12 @@ const Hero = () => {
                 src={logoGithub}
                 alt="logo de github"
                 title="Github"
+              />
+              <HeroSocial
+                href={gitlabLink}
+                src={logoGitlab}
+                alt="logo de gitlab"
+                title="Gitlab"
               />
               <HeroSocial
                 href={twitterLink}

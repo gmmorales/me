@@ -4,6 +4,7 @@ import Form from "./Form";
 import gmailStiker from "../assets/image/gmail.png";
 // import phoneStiker from "../assets/image/1220365_whatsapp_chat_communication_message_phone_icon.png";
 import githubStiker from "../assets/image/github (3).png";
+import gitlabStiker from "../assets/image/gitlab.png";
 import linkedinStiker from "../assets/image/linkedin.png";
 // import telegranStiker from "../assets/image/telegram-logo.png";
 import twitterStiker from "../assets/image/twitter.png";
@@ -12,6 +13,7 @@ import ContactNetwork from "./ContactNetwork";
 // const cellPhone =
   // "https://api.whatsapp.com/send/?phone=584249501974&text&app_absent=0";
 const githubLink = "https://github.com/gmmorales";
+const gitlabLink = "https://gitlab.com/gmmorales";
 const linkedinLink = "https://www.linkedin.com/in/ing-gustavo-mauricio-morales-77193022/";
 // const telegramLink = "https://t.me/dbriceno";
 const twitterLink = "https://x.com/GustavoLepton";
@@ -81,6 +83,15 @@ const Contactus = () => {
                   title="Github"
                   header="Github"
                   href={githubLink}
+                  target="_blank"
+                  linkName="gmmorales"
+                />
+                <ContactNetwork
+                  stiker={gitlabStiker}
+                  alt="gitlab-Stiker"
+                  title="Gitlab"
+                  header="Gitlab"
+                  href={gitlabLink}
                   target="_blank"
                   linkName="gmmorales"
                 />
