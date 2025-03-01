@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/me/static/css/main.7f0bb2fd.chunk.css",
-    "main.js": "/me/static/js/main.7606e80b.chunk.js",
-    "main.js.map": "/me/static/js/main.7606e80b.chunk.js.map",
+    "main.js": "/me/static/js/main.49a36b0a.chunk.js",
+    "main.js.map": "/me/static/js/main.49a36b0a.chunk.js.map",
     "runtime-main.js": "/me/static/js/runtime-main.d852e278.js",
     "runtime-main.js.map": "/me/static/js/runtime-main.d852e278.js.map",
     "static/js/2.fbbebb3d.chunk.js": "/me/static/js/2.fbbebb3d.chunk.js",
@@ -23,6 +23,7 @@
     "static/media/fondo-blanco.09b15aea.png": "/me/static/media/fondo-blanco.09b15aea.png",
     "static/media/food-app.cef515c4.jpg": "/me/static/media/food-app.cef515c4.jpg",
     "static/media/git-logo2.430db756.png": "/me/static/media/git-logo2.430db756.png",
+    "static/media/gitlab.edc7fea4.png": "/me/static/media/gitlab.edc7fea4.png",
     "static/media/javascript-logo-svg-vector.9abe85eb.svg": "/me/static/media/javascript-logo-svg-vector.9abe85eb.svg",
     "static/media/memo-app-def.20cb964c.jpg": "/me/static/media/memo-app-def.20cb964c.jpg",
     "static/media/memoapp-baner.7531e6a5.jpg": "/me/static/media/memoapp-baner.7531e6a5.jpg",
@@ -46,6 +47,6 @@
     "static/js/runtime-main.d852e278.js",
     "static/js/2.fbbebb3d.chunk.js",
     "static/css/main.7f0bb2fd.chunk.css",
-    "static/js/main.7606e80b.chunk.js"
+    "static/js/main.49a36b0a.chunk.js"
   ]
 }
