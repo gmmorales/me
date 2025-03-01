@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import logoGithub from "../assets/image/github (3).png";
 import logoLinkedin from "../assets/image/linkedin.png";
-import logoTwitter from "../assets/image/twitter.png";
+import logoTwitter from "../assets/image/x.png";
 import HeroButton from "./HeroButton";
 import HeroSocial from "./HeroSocial";
 import "./styles/Hero.css";
-const linkedinLink = "https://www.linkedin.com/in/dbriceno10/";
-const gihubLink = "https://github.com/dbriceno10";
-const twitterLink = "https://twitter.com/dbriceno10dev";
+const linkedinLink = "https://www.linkedin.com/in/ing-gustavo-mauricio-morales-77193022/";
+const gihubLink = "https://github.com/gmmorales";
+const twitterLink = "https://x.com/GustavoLepton";
 
 const Hero = () => {
 
@@ -30,12 +30,13 @@ const Hero = () => {
         <div className="column">
           <div className="s-hero__content-about">
             <h1>
-              <span className="font-500">Daniel Briceño</span>
+              <span className="font-500">Gustavo Morales</span>
             </h1>
             <h3>
-              <span>Full Stack Web Developer</span>
+              <span>Telecomunication engineer ▪︎ Data Scientist ▪︎ Jr full stack developer</span>              
               <br />
-              <span>JavaScript | React JS | Node | Redux | PostgreSQL | MongoDB | SCRUM</span>
+              <br />
+              <span>| Java | Python | JavaScript | React JS | Node | MySQL | PostgreSQL | SCRUM | Spring Boot |</span>
             </h3>
             <div className="s-hero__content-social">
               <HeroSocial

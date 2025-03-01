@@ -11,10 +11,10 @@ import twitterStiker from "../assets/image/twitter.png";
 import ContactNetwork from "./ContactNetwork";
 // const cellPhone =
   // "https://api.whatsapp.com/send/?phone=584249501974&text&app_absent=0";
-const githubLink = "https://github.com/dbriceno10";
-const linkedinLink = "https://www.linkedin.com/in/dbriceno10/";
+const githubLink = "https://github.com/gmmorales";
+const linkedinLink = "https://www.linkedin.com/in/ing-gustavo-mauricio-morales-77193022/";
 // const telegramLink = "https://t.me/dbriceno";
-const twitterLink = "https://twitter.com/dbriceno10dev";
+const twitterLink = "https://x.com/GustavoLepton";
 // const torreLink = " https://torre.co/dbriceno10?s=hWuAmyFOFx";
 
 const Contactus = () => {
@@ -46,8 +46,9 @@ const Contactus = () => {
             <span className="black-background">
               {/* Let's start a new project together, I want to collaborate to
                 materialize that idea into a successful project. */}
-              Estoy listo para iniciar un nuevo proyecto y ayudarte a llevar a
-              cabo tu idea.
+              Si requiere asistencia técnica y
+              consultoría puede contactarse a través 
+              de mis redes sociales o dejarme un mensaje.
             </span>
           </h4>
           <Form />
@@ -64,7 +65,7 @@ const Contactus = () => {
                   alt="gmail-Stiker"
                   title="Correo Electrónico"
                   header="Email"
-                  linkName="dbriceno10dev@gmail.com"
+                  linkName="gustavom.morales@gmail.com"
                 />
                 <ContactNetwork
                   stiker={linkedinStiker}
@@ -73,7 +74,7 @@ const Contactus = () => {
                   header="Linkedin"
                   href={linkedinLink}
                   target="_blank"
-                  linkName="Daniel Briceño"
+                  linkName="Gustavo Morales"
                 />
                 <ContactNetwork
                   stiker={githubStiker}
@@ -82,7 +83,7 @@ const Contactus = () => {
                   header="Github"
                   href={githubLink}
                   target="_blank"
-                  linkName="dbriceno10"
+                  linkName="gmmorales"
                 />
                 <ContactNetwork
                   stiker={twitterStiker}
@@ -91,7 +92,7 @@ const Contactus = () => {
                   header="Twitter"
                   href={twitterLink}
                   target="_blank"
-                  linkName="@dbriceno10dev"
+                  linkName="@GustavoLepton"
                 />
                 {/* <ContactNetwork
                   stiker={phoneStiker}

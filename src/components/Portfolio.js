@@ -22,7 +22,7 @@ const Portfolio = () => {
           <h3 className="font-500">{/*A Few Of My Latest Creations*/}Mis últimos proyectos</h3>
         </div>
       </div>
-      <Modals />
+      {/*<Modals />*/}
     </section>
   );
 };

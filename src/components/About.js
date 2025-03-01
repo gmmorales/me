@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Skills from "./Skills";
 import userPhoto from "../assets/image/fondo-blanco.png";
 import "./styles/About.css";
-import CV from "../assets/cv/Daniel_Briceno_CV.pdf";
+import CV from "../assets/cv/Gustavo_Morales_CV.pdf";
 
 const About = () => {
   const handleScrollToTop = () => {
@@ -29,18 +29,16 @@ const About = () => {
             </h1>
             <div>
               <p className="about-description">
-                Hola, mi nombre es Daniel Briceño, Full Stack Developer.
+                Hola, mi nombre es Gustavo Morales, Full Stack Developer.
               </p>
 
               <p className="about-description">
-                Soy un apasionado desarrollador full stack con más de 2 años de
-                experiencia profesional. He tenido la oportunidad de trabajar en
-                proyectos de mediano y largo alcance, implementando clientes con
-                React y React Native, además de trabajar en el lado del servidor
-                implementando APIs y trabajando bajo la arquitectura de micro
-                servicios. Siempre prestando especial atención a los detalles,
-                trabajando bajo principios SOLID y arquitecturas como hexagonal
-                y MCV para garantizar un código limpio y mantenible.
+                Egresado del Instituto Universitario de la Policía Federal Argentina
+                con el título de Ingeniero en Telecomunicaciones. Cuento con más de trece años
+                de experiencia en el campo de IT y las telecomunicaciones. A lo largo de mi
+                carrera, he trabajado en diversas empresas, ocupando distintos roles. 
+                Actualmente, me desempeño como Desarrollador Full Stack en una compañía
+                internacional, Neoris.
               </p>
 
               <p className="about-description">
@@ -51,10 +49,8 @@ const About = () => {
               </p>
 
               <p className="about-description">
-                Técnologías: HTML, CSS, JavaScript, React JS/React Native, Next
-                JS, Redux JS, TypeScript, Bootstrap, Less, Node JS, Nest JS,
-                Express, SQL, PostgreSQL, Sequelize, MongoDB, Mongoose,
-                JsonWebToken, Figma, Git.
+                Técnologías: Java, Spring boot, python, HTML, CSS, JavaScript, React JS/React Native, Next
+                JS, TypeScript, Bootstrap, SQL, PostgreSQL, Figma, Git.
               </p>
             </div>
             <hr size="8px" color="white" />
@@ -68,7 +64,7 @@ const About = () => {
             <p className="about-description">
               Como desarrollador frontend, tengo experiencia en el manejo de
               HTML y CSS, además del manejo de frameworks y liberías,
-              especialmente React JS y React Native. He trabajado en proyectos
+              especialmente React JS. He trabajado en proyectos
               de escala mediana y grandes, implementando soluciones de código
               eficientes, trabajado con arquitecturas de software escalables y
               fácilmente mantenibles.
@@ -76,11 +72,11 @@ const About = () => {
             <br />
             <h3 className="about-me center font-500">Back-End</h3>
             <p className="about-description">
-              Utilizando Express y Node, puedo crear rutas para APIs REST,
-              protegerlas e implementar bases de datos SQL y NoSQL como
-              PostgreSQL y MongoDB. De igualmanera he trabajado con
-              arquitecturas de software escalables y mantenibles, implementando
-              módulos manteniendo separadas las distintas capas de un proyecto.
+              Utilizando Java con Spring boot, python con Flask , puedo crear
+              rutas para APIs REST, protegerlas e implementar bases de datos SQL. 
+              De igualmanera he trabajado con arquitecturas de software escalables
+              y mantenibles, implementando módulos manteniendo separadas las distintas
+              capas de un proyecto.
             </p>
             <p className="about-description">
               He trabajado en proyectos medianos y grandes, desde su
@@ -88,7 +84,7 @@ const About = () => {
               oportunidad de aprender cada día acerca de como ayudar al cliente
               a desarrollar su producto deseado resolviendo cualquier problema
               presentado. He tenido la oportunidad de trabajar en el desarrollo
-              de aplicaciones web y móbiles, empleando las mejores prácticas,
+              de aplicaciones bancarias, empleando las mejores prácticas,
               escribiendo código limpio, legible y mantenible, siempre teniendo
               en mente optimizar al máximo el rendimiento del prouducto final.
             </p>
@@ -100,7 +96,7 @@ const About = () => {
                   id="btn-donwload-cv"
                   className="btn btn--download btn-donwload"
                   href={CV}
-                  download="Daniel_Briceno_CV"
+                  download="Gustavo_Morales_CV"
                 >
                   Descargar CV
                 </a>

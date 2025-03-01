@@ -17,6 +17,16 @@ const Header = () => {
                 About
               </NavLink>
             </li>
+            <li id="timeline">
+              <NavLink activeClassName="current" to="/timeline">
+                Timeline
+              </NavLink>
+            </li>
+            <li id="education">
+              <NavLink activeClassName="current" to="/education">
+                Education & Certifications 
+              </NavLink>
+            </li>
             <li id="portfolio">
               <NavLink activeClassName="current" to="/portfolio">
                 Portfolio

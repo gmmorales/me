@@ -27,9 +27,12 @@ Una vez realizado todos los cambios deseados con este comando crearas un bundle 
 
 El proyecto tiene una pequeña comfiguración para hacer el despliegue del proyecto en gh-pages en modo producción. Si usted desea modificar el proyecto para desplegar su propia app, debe cambiar en el archivo package.json la propiedad "homepage", de la siguiente manera: "homepage": "https://nombre-usuario.github.io/nombre-repositorio"
 
+### `rm -rf node_modules/.cache/gh-pages`
+Elimina la cache erronea
+
 ## Despliegue 📦
 
-Podrás visitar mi portafolio en el siguiente enlace: https://gmmorales.github.io/portfolio
+Podrás visitar mi portafolio en el siguiente enlace: https://gmmorales.github.io/me
 
 ## Construido con 🛠️
 
