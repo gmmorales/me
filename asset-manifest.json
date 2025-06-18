@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/me/static/css/main.7f0bb2fd.chunk.css",
-    "main.js": "/me/static/js/main.49a36b0a.chunk.js",
-    "main.js.map": "/me/static/js/main.49a36b0a.chunk.js.map",
+    "main.js": "/me/static/js/main.e10d73b2.chunk.js",
+    "main.js.map": "/me/static/js/main.e10d73b2.chunk.js.map",
     "runtime-main.js": "/me/static/js/runtime-main.d852e278.js",
     "runtime-main.js.map": "/me/static/js/runtime-main.d852e278.js.map",
     "static/js/2.fbbebb3d.chunk.js": "/me/static/js/2.fbbebb3d.chunk.js",
@@ -11,7 +11,7 @@
     "static/css/main.7f0bb2fd.chunk.css.map": "/me/static/css/main.7f0bb2fd.chunk.css.map",
     "static/js/2.fbbebb3d.chunk.js.LICENSE.txt": "/me/static/js/2.fbbebb3d.chunk.js.LICENSE.txt",
     "static/media/Error404.56b5ac10.jpg": "/me/static/media/Error404.56b5ac10.jpg",
-    "static/media/Gustavo_Morales_CV.85e559bd.pdf": "/me/static/media/Gustavo_Morales_CV.85e559bd.pdf",
+    "static/media/Gustavo_Morales_CV.a29089d6.pdf": "/me/static/media/Gustavo_Morales_CV.a29089d6.pdf",
     "static/media/avocado-app.b1b01f83.png": "/me/static/media/avocado-app.b1b01f83.png",
     "static/media/batatabit-baner.6afdb82c.png": "/me/static/media/batatabit-baner.6afdb82c.png",
     "static/media/batatabit-def.a15ec6fd.jpg": "/me/static/media/batatabit-def.a15ec6fd.jpg",
@@ -47,6 +47,6 @@
     "static/js/runtime-main.d852e278.js",
     "static/js/2.fbbebb3d.chunk.js",
     "static/css/main.7f0bb2fd.chunk.css",
-    "static/js/main.49a36b0a.chunk.js"
+    "static/js/main.e10d73b2.chunk.js"
   ]
 }
