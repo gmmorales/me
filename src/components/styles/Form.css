@@ -48,8 +48,7 @@
   background-color: var(--normal-white);
 }
 
-/* @media (max-width: 503px) { */
-  @media (max-width: 650px) {
+@media (max-width: 650px) {
   .inputs-container {
     display: flex;
     flex-direction: column;
@@ -153,7 +152,72 @@
   text-align: center;
 }
 
-/* .swal-modal {
-  background-color: var(--starts-gray);
+/* ========================================== */
+/* INICIO CÓDIGO AGREGADO PARA PGP CONTAINER  */
+/* ========================================== */
+
+.pgp-container {
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 600px;
   background: url("../../assets/image/stars.svg"), var(--starts-gray);
-} */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--normal-gray);
+}
+
+.pgp-header {
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid var(--normal-gray);
+}
+
+.pgp-header span {
+  font-weight: bold;
+  color: var(--normal-black);
+  font-size: 0.9rem;
+}
+
+.btn-copy {
+  background-color: var(--active-nav-blue);
+  color: var(--normal-white);
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: 0.3s;
+}
+
+.btn-copy:hover {
+  background-color: var(--dowload-orange);
+}
+
+.pgp-content {
+  margin: 0;
+  padding: 20px;
+  background-color: var(--normal-white);
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: var(--hover-gray);
+  max-height: 200px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+  border-top: 1px solid var(--soft-gray);
+}
+
+/* Ajuste responsive para el contenedor PGP */
+@media (max-width: 650px) {
+  .pgp-container {
+    max-width: 90%;
+  }
+}
+
+/* ========================================== */
+/* FIN CÓDIGO AGREGADO PARA PGP CONTAINER     */
+/* ========================================== */
