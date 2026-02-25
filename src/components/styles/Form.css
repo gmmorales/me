@@ -201,20 +201,24 @@
   margin: 0;
   padding: 20px;
   background-color: var(--normal-white);
-  font-family: monospace;
-  font-size: 0.75rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.7rem;
   color: var(--hover-gray);
   max-height: 200px;
   overflow-y: auto;
-  white-space: pre-wrap;
-  word-break: break-all;
+  
+  /* AJUSTE PARA QUITAR RENGLONES Y ESPACIOS */
+  line-height: 1;             /* Elimina el espacio vertical entre líneas */
+  white-space: pre-wrap;      /* Respeta saltos pero no añade extras */
+  word-break: break-all;      /* Evita que se desborde */
+  letter-spacing: -0.1px;     /* Opcional: junta un pelín más los caracteres */
   border-top: 1px solid var(--soft-gray);
 }
 
 /* Ajuste responsive para el contenedor PGP */
 @media (max-width: 650px) {
   .pgp-container {
-    max-width: 90%;
+    width: 90%;
   }
 }
 

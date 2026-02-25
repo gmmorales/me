@@ -69,7 +69,7 @@ kbjji9hjpoIr/9jvx7mR/isgPa6Qd8NgeTcvRmeohNSwip7icSvgQrFY7lkbBIDK
 +u1aQrjsG1baIcRhSMq0ZWmnImQd9v8sdykrX3LtZfsacFHNYRyhiTiXdS7eiPy1
 SoT2BPLMzs0kKWrTo8ZFxwkQFPWfANOuhw==
 =GO7f
------END PGP PUBLIC KEY BLOCK-----`;
+-----END PGP PUBLIC KEY BLOCK-----`.trim();
 
   const handleCopy = () => {
     navigator.clipboard.writeText(PGP_KEY);
