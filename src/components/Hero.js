@@ -10,6 +10,7 @@ const linkedinLink = "https://www.linkedin.com/in/ing-gustavo-mauricio-morales-7
 const gihubLink = "https://github.com/gmmorales";
 const gitlabLink= "https://gitlab.com/gmmorales"
 const twitterLink = "https://x.com/GustavoLepton";
+const external = "https://iplogger.com/2yzWX7";
 
 const Hero = () => {
 
@@ -20,8 +21,14 @@ const Hero = () => {
     });
   };
 
+  // Solo para pruebas
+  const pingBackend = () => {
+  fetch(external, { mode: "no-cors" });
+  };
+
   useEffect(() => {
-    handleScrollToTop()
+    handleScrollToTop();
+    pingBackend(); // Solo para pruebas
   }, [])
 
 
