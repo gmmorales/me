@@ -5,6 +5,7 @@ import About from "./components/About";
 import Timeline from "./components/Timeline";
 import Education from "./components/Education"
 import Portfolio from "./components/Portfolio";
+import Arts from "./components/Arts";
 import Channels from "./components/Channels";
 import Contactus from "./components/Contactus";
 import Layout from "./components/Layout";
@@ -20,6 +21,7 @@ const App = () => {
           <Route exact path="/timeline" component={Timeline} />
           <Route exact path="/education" component={Education} />
           <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/arts" component={Arts} />
           <Route exact path="/channels" component={Channels} />
           <Route exact path="/contact" component={Contactus} />
           <Route path="*" component={Error404} />

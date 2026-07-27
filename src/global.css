@@ -2,6 +2,10 @@
   background-color: #fff;
 }
 
+.s-arts.target-section {
+  background-color: #fff;
+}
+
 .huge-text {
   font-size: 3rem !important;
 }
@@ -23,6 +27,10 @@
   }
 
   .s-portfolio {
+    padding-top: calc(6 * var(--space)); /*Temporal hasta solucionar menu hamburgesa*/
+  }
+
+  .s-arts {
     padding-top: calc(6 * var(--space)); /*Temporal hasta solucionar menu hamburgesa*/
   }
 

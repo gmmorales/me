@@ -32,6 +32,11 @@ const Header = () => {
                 Portfolio
               </NavLink>
             </li>
+            <li id="arts">
+              <NavLink activeClassName="current" to="/arts">
+                Arts
+              </NavLink>
+            </li>
             <li id="channels">
               <NavLink activeClassName="current" to="/channels">
                 Channels
