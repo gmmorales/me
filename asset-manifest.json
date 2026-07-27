@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/me/static/css/main.624938d0.chunk.css",
-    "main.js": "/me/static/js/main.8ae828f9.chunk.js",
-    "main.js.map": "/me/static/js/main.8ae828f9.chunk.js.map",
+    "main.css": "/me/static/css/main.90d41756.chunk.css",
+    "main.js": "/me/static/js/main.3b65f9b0.chunk.js",
+    "main.js.map": "/me/static/js/main.3b65f9b0.chunk.js.map",
     "runtime-main.js": "/me/static/js/runtime-main.d852e278.js",
     "runtime-main.js.map": "/me/static/js/runtime-main.d852e278.js.map",
-    "static/js/2.5d4a3865.chunk.js": "/me/static/js/2.5d4a3865.chunk.js",
-    "static/js/2.5d4a3865.chunk.js.map": "/me/static/js/2.5d4a3865.chunk.js.map",
+    "static/js/2.272a619a.chunk.js": "/me/static/js/2.272a619a.chunk.js",
+    "static/js/2.272a619a.chunk.js.map": "/me/static/js/2.272a619a.chunk.js.map",
     "index.html": "/me/index.html",
-    "static/css/main.624938d0.chunk.css.map": "/me/static/css/main.624938d0.chunk.css.map",
-    "static/js/2.5d4a3865.chunk.js.LICENSE.txt": "/me/static/js/2.5d4a3865.chunk.js.LICENSE.txt",
+    "static/css/main.90d41756.chunk.css.map": "/me/static/css/main.90d41756.chunk.css.map",
+    "static/js/2.272a619a.chunk.js.LICENSE.txt": "/me/static/js/2.272a619a.chunk.js.LICENSE.txt",
     "static/media/Error404.56b5ac10.jpg": "/me/static/media/Error404.56b5ac10.jpg",
     "static/media/Gustavo_Morales_CV.0f3001a6.pdf": "/me/static/media/Gustavo_Morales_CV.0f3001a6.pdf",
     "static/media/avocado-app.b1b01f83.png": "/me/static/media/avocado-app.b1b01f83.png",
@@ -45,8 +45,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d852e278.js",
-    "static/js/2.5d4a3865.chunk.js",
-    "static/css/main.624938d0.chunk.css",
-    "static/js/main.8ae828f9.chunk.js"
+    "static/js/2.272a619a.chunk.js",
+    "static/css/main.90d41756.chunk.css",
+    "static/js/main.3b65f9b0.chunk.js"
   ]
 }
