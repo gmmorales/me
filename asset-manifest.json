@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/me/static/css/main.11ea41d6.chunk.css",
-    "main.js": "/me/static/js/main.7898fe82.chunk.js",
-    "main.js.map": "/me/static/js/main.7898fe82.chunk.js.map",
+    "main.css": "/me/static/css/main.c1ad8fa0.chunk.css",
+    "main.js": "/me/static/js/main.13050e21.chunk.js",
+    "main.js.map": "/me/static/js/main.13050e21.chunk.js.map",
     "runtime-main.js": "/me/static/js/runtime-main.d852e278.js",
     "runtime-main.js.map": "/me/static/js/runtime-main.d852e278.js.map",
     "static/js/2.d58853a4.chunk.js": "/me/static/js/2.d58853a4.chunk.js",
     "static/js/2.d58853a4.chunk.js.map": "/me/static/js/2.d58853a4.chunk.js.map",
     "index.html": "/me/index.html",
-    "static/css/main.11ea41d6.chunk.css.map": "/me/static/css/main.11ea41d6.chunk.css.map",
+    "static/css/main.c1ad8fa0.chunk.css.map": "/me/static/css/main.c1ad8fa0.chunk.css.map",
     "static/js/2.d58853a4.chunk.js.LICENSE.txt": "/me/static/js/2.d58853a4.chunk.js.LICENSE.txt",
     "static/media/Error404.56b5ac10.jpg": "/me/static/media/Error404.56b5ac10.jpg",
     "static/media/Gustavo_Morales_CV.0f3001a6.pdf": "/me/static/media/Gustavo_Morales_CV.0f3001a6.pdf",
@@ -55,7 +55,7 @@
   "entrypoints": [
     "static/js/runtime-main.d852e278.js",
     "static/js/2.d58853a4.chunk.js",
-    "static/css/main.11ea41d6.chunk.css",
-    "static/js/main.7898fe82.chunk.js"
+    "static/css/main.c1ad8fa0.chunk.css",
+    "static/js/main.13050e21.chunk.js"
   ]
 }
