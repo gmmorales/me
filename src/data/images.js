@@ -54,13 +54,13 @@ export const images = [
   {
     id: 8,
     title: "Sexy girl I",
-    category: "Cyberpunk",
+    category: "Girl",
     src: art8
   },
   {
     id: 9,
     title: "Sexy girl II",
-    category: "Cyberpunk",
+    category: "Girl",
     src: art9
   }
 ];

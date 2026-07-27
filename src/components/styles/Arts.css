@@ -24,6 +24,53 @@
 }
 
 /* =========================
+   🎛️ FILTROS
+========================= */
+
+.arts-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+/* BOTONES */
+
+.filter-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.15);
+
+  background: rgba(255,255,255,0.05);
+  color: #9aa4b2;
+
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+
+.filter-btn:hover {
+  color: #fff;
+  border-color: rgba(0,255,150,0.5);
+  box-shadow: 0 0 10px rgba(0,255,150,0.2);
+}
+
+/* ACTIVO (🔥 clave visual tipo screenshot) */
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #00ff88, #00cfff);
+  color: #000;
+  border: none;
+
+  box-shadow: 0 0 12px rgba(0,255,150,0.5);
+}
+
+/* =========================
    🎨 GRID PORTFOLIO
 ========================= */
 
