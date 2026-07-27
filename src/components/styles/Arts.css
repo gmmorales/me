@@ -3,18 +3,24 @@
 ========================= */
 
 .s-arts.target-section {
-  background: url("../../assets/image/stars.svg"), #e5e5e5;
-  background-repeat: repeat;
+  background: radial-gradient(circle at top, #0a0f1c, #05070d 70%);
   padding: 60px 0;
+  color: #fff;
 }
 
 /* HEADER */
 
-.s-arts__header h3 {
-  background-color: #e5e5e5;
-  font-weight: bold;
-  font-size: 40px;
-  margin-bottom: 20px;
+.s-arts__header h1 {
+  font-weight: 800;
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #39ff14;
+  letter-spacing: 2px;
+}
+
+.s-arts__header p {
+  color: #9aa4b2;
+  max-width: 500px;
 }
 
 /* =========================
@@ -42,23 +48,18 @@
 .arts-item__inner {
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 14px;
   cursor: pointer;
   background: #000;
-
-  /* 🔥 proporción uniforme tipo Behance */
   aspect-ratio: 4 / 5;
 
-  /* 💎 efecto tarjeta */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  transition: all 0.35s ease;
 }
 
-/* HOVER TARJETA */
-
 .arts-item__inner:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 60px rgba(0, 255, 150, 0.15);
 }
 
 /* =========================
@@ -70,19 +71,16 @@
   height: 100%;
   object-fit: cover;
   display: block;
-
-  transition: transform 0.6s ease, filter 0.6s ease;
+  transition: transform 0.7s ease, filter 0.7s ease;
 }
 
-/* ZOOM + DARKEN */
-
 .arts-item__inner:hover img {
-  transform: scale(1.1);
+  transform: scale(1.12);
   filter: brightness(0.75);
 }
 
 /* =========================
-   🌫️ OVERLAY
+   🌫️ OVERLAY (SIEMPRE ACTIVO)
 ========================= */
 
 .arts-item__inner::after {
@@ -92,12 +90,12 @@
 
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.9),
-    rgba(0, 0, 0, 0.4),
-    transparent
+    rgba(0, 0, 0, 0.85) 15%,
+    rgba(0, 0, 0, 0.4) 45%,
+    transparent 80%
   );
 
-  opacity: 0;
+  opacity: 1; /* 🔥 SIEMPRE visible */
   transition: opacity 0.4s ease;
 }
 
@@ -113,49 +111,61 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 100%;
   padding: 18px;
-  color: #fff;
+
   z-index: 2;
 
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.45s ease;
-}
-
-.arts-item__inner:hover .arts-item__content {
-  opacity: 1;
+  opacity: 1; /* 🔥 SIEMPRE visible */
   transform: translateY(0);
 }
 
-/* TITULO */
+/* 🔥 TITULO (FIX REAL) */
 
 .arts-item__content h4 {
   margin: 0;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+
+  /* 💥 VISIBILIDAD TOP */
+  text-shadow: 
+    0 2px 6px rgba(0,0,0,0.9),
+    0 0 12px rgba(0,0,0,0.8);
+
+  letter-spacing: 0.5px;
 }
 
-/* CATEGORIA (badge style) */
+/* 🏷️ CATEGORIA */
 
 .arts-item__content p {
-  margin: 6px 0 0;
+  margin-top: 6px;
   font-size: 11px;
+  font-weight: 500;
 
   display: inline-block;
-  padding: 4px 8px;
+  padding: 4px 10px;
   border-radius: 6px;
 
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(4px);
+  background: rgba(0, 255, 140, 0.15);
+  color: #00ff88;
 
-  opacity: 0.9;
+  border: 1px solid rgba(0, 255, 140, 0.4);
+
+  backdrop-filter: blur(6px);
+}
+
+/* =========================
+   ✨ HOVER (SUAVE, SIN ROMPER TEXTO)
+========================= */
+
+.arts-item__inner:hover .arts-item__content {
+  transform: translateY(-4px);
 }
 
 /* =========================
    📱 RESPONSIVE
 ========================= */
-
-/* tablets */
 
 @media (max-width: 1024px) {
   .arts-grid {
@@ -164,11 +174,9 @@
   }
 }
 
-/* mobile */
-
 @media (max-width: 600px) {
-  .s-arts__header h3 {
-    font-size: 30px;
+  .s-arts__header h1 {
+    font-size: 28px;
   }
 
   .arts-grid {
