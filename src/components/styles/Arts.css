@@ -8,7 +8,9 @@
   color: #fff;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 .s-arts__header h1 {
   font-weight: 800;
@@ -35,24 +37,17 @@
   justify-content: center;
 }
 
-/* BOTONES */
-
 .filter-btn {
   padding: 8px 16px;
   border-radius: 20px;
   border: 1px solid rgba(255,255,255,0.15);
-
   background: rgba(255,255,255,0.05);
   color: #9aa4b2;
-
   font-size: 12px;
   letter-spacing: 0.5px;
   cursor: pointer;
-
   transition: all 0.3s ease;
 }
-
-/* HOVER */
 
 .filter-btn:hover {
   color: #fff;
@@ -60,13 +55,10 @@
   box-shadow: 0 0 10px rgba(0,255,150,0.2);
 }
 
-/* ACTIVO (🔥 clave visual tipo screenshot) */
-
 .filter-btn.active {
   background: linear-gradient(135deg, #00ff88, #00cfff);
   color: #000;
   border: none;
-
   box-shadow: 0 0 12px rgba(0,255,150,0.5);
 }
 
@@ -80,6 +72,9 @@
   gap: 24px;
   margin-top: 40px;
   padding-bottom: 40px;
+
+  /* animación */
+  animation: fadeInGrid 0.5s ease forwards;
 }
 
 /* =========================
@@ -88,6 +83,11 @@
 
 .arts-item {
   position: relative;
+
+  animation: fadeItem 0.6s ease forwards;
+  animation-fill-mode: both;
+
+  will-change: transform, opacity;
 }
 
 /* CONTENEDOR PRINCIPAL */
@@ -142,12 +142,8 @@
     transparent 80%
   );
 
-  opacity: 1; /* 🔥 SIEMPRE visible */
-  transition: opacity 0.4s ease;
-}
-
-.arts-item__inner:hover::after {
   opacity: 1;
+  transition: opacity 0.4s ease;
 }
 
 /* =========================
@@ -160,14 +156,11 @@
   left: 0;
   width: 100%;
   padding: 18px;
-
   z-index: 2;
 
-  opacity: 1; /* 🔥 SIEMPRE visible */
+  opacity: 1;
   transform: translateY(0);
 }
-
-/* 🔥 TITULO (FIX REAL) */
 
 .arts-item__content h4 {
   margin: 0;
@@ -175,15 +168,12 @@
   font-weight: 700;
   color: #ffffff;
 
-  /* 💥 VISIBILIDAD TOP */
   text-shadow: 
     0 2px 6px rgba(0,0,0,0.9),
     0 0 12px rgba(0,0,0,0.8);
 
   letter-spacing: 0.5px;
 }
-
-/* 🏷️ CATEGORIA */
 
 .arts-item__content p {
   margin-top: 6px;
@@ -202,13 +192,48 @@
   backdrop-filter: blur(6px);
 }
 
-/* =========================
-   ✨ HOVER (SUAVE, SIN ROMPER TEXTO)
-========================= */
+/* HOVER TEXTO */
 
 .arts-item__inner:hover .arts-item__content {
   transform: translateY(-4px);
 }
+
+/* =========================
+   ✨ ANIMACIONES
+========================= */
+
+@keyframes fadeInGrid {
+  0% {
+    opacity: 0;
+    transform: scale(0.98) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes fadeItem {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* delay escalonado */
+
+.arts-item:nth-child(1) { animation-delay: 0.05s; }
+.arts-item:nth-child(2) { animation-delay: 0.1s; }
+.arts-item:nth-child(3) { animation-delay: 0.15s; }
+.arts-item:nth-child(4) { animation-delay: 0.2s; }
+.arts-item:nth-child(5) { animation-delay: 0.25s; }
+.arts-item:nth-child(6) { animation-delay: 0.3s; }
+.arts-item:nth-child(7) { animation-delay: 0.35s; }
+.arts-item:nth-child(8) { animation-delay: 0.4s; }
 
 /* =========================
    📱 RESPONSIVE
@@ -230,4 +255,103 @@
     grid-template-columns: 1fr;
     gap: 16px;
   }
+}
+
+/* =========================
+   🖼️ MODAL GALLERY
+========================= */
+
+.arts-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  backdrop-filter: blur(8px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+  animation: fadeInModal 0.3s ease;
+}
+
+.arts-modal__content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.arts-modal__image {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 10px;
+
+  box-shadow: 0 0 40px rgba(0,255,150,0.2);
+}
+
+/* INFO */
+
+.arts-modal__info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.arts-modal__info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.arts-modal__info p {
+  font-size: 12px;
+  color: #00ff88;
+}
+
+/* BOTONES */
+
+.modal-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.modal-btn:hover {
+  background: rgba(0,255,150,0.3);
+}
+
+.modal-btn.prev {
+  left: -60px;
+}
+
+.modal-btn.next {
+  right: -60px;
+}
+
+/* CERRAR */
+
+.modal-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ANIMACIÓN */
+
+@keyframes fadeInModal {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
