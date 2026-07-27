@@ -1,17 +1,26 @@
 {
   "files": {
-    "main.css": "/me/static/css/main.90d41756.chunk.css",
-    "main.js": "/me/static/js/main.3b65f9b0.chunk.js",
-    "main.js.map": "/me/static/js/main.3b65f9b0.chunk.js.map",
+    "main.css": "/me/static/css/main.8c043f26.chunk.css",
+    "main.js": "/me/static/js/main.9805d1ff.chunk.js",
+    "main.js.map": "/me/static/js/main.9805d1ff.chunk.js.map",
     "runtime-main.js": "/me/static/js/runtime-main.d852e278.js",
     "runtime-main.js.map": "/me/static/js/runtime-main.d852e278.js.map",
     "static/js/2.272a619a.chunk.js": "/me/static/js/2.272a619a.chunk.js",
     "static/js/2.272a619a.chunk.js.map": "/me/static/js/2.272a619a.chunk.js.map",
     "index.html": "/me/index.html",
-    "static/css/main.90d41756.chunk.css.map": "/me/static/css/main.90d41756.chunk.css.map",
+    "static/css/main.8c043f26.chunk.css.map": "/me/static/css/main.8c043f26.chunk.css.map",
     "static/js/2.272a619a.chunk.js.LICENSE.txt": "/me/static/js/2.272a619a.chunk.js.LICENSE.txt",
     "static/media/Error404.56b5ac10.jpg": "/me/static/media/Error404.56b5ac10.jpg",
     "static/media/Gustavo_Morales_CV.0f3001a6.pdf": "/me/static/media/Gustavo_Morales_CV.0f3001a6.pdf",
+    "static/media/art1.aa9cdc85.jpg": "/me/static/media/art1.aa9cdc85.jpg",
+    "static/media/art2.a0d8fb62.jpg": "/me/static/media/art2.a0d8fb62.jpg",
+    "static/media/art3.db3bdf27.jpg": "/me/static/media/art3.db3bdf27.jpg",
+    "static/media/art4.ee3336e3.jpg": "/me/static/media/art4.ee3336e3.jpg",
+    "static/media/art5.9f17b2eb.jpg": "/me/static/media/art5.9f17b2eb.jpg",
+    "static/media/art6.8901c163.jpg": "/me/static/media/art6.8901c163.jpg",
+    "static/media/art7.b0f92c64.jpg": "/me/static/media/art7.b0f92c64.jpg",
+    "static/media/art8.9f474c87.jpg": "/me/static/media/art8.9f474c87.jpg",
+    "static/media/art9.1b489033.jpg": "/me/static/media/art9.1b489033.jpg",
     "static/media/avocado-app.b1b01f83.png": "/me/static/media/avocado-app.b1b01f83.png",
     "static/media/batatabit-baner.6afdb82c.png": "/me/static/media/batatabit-baner.6afdb82c.png",
     "static/media/batatabit-def.a15ec6fd.jpg": "/me/static/media/batatabit-def.a15ec6fd.jpg",
@@ -46,7 +55,7 @@
   "entrypoints": [
     "static/js/runtime-main.d852e278.js",
     "static/js/2.272a619a.chunk.js",
-    "static/css/main.90d41756.chunk.css",
-    "static/js/main.3b65f9b0.chunk.js"
+    "static/css/main.8c043f26.chunk.css",
+    "static/js/main.9805d1ff.chunk.js"
   ]
 }
