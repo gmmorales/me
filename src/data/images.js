@@ -70,18 +70,18 @@ export const images = [
     id: 10,
     title: "Planet Kepler-1649c",
     category: "World",
-    src: art7
+    src: art10
   },
   {
     id: 11,
     title: "X-21 STRIKER",
     category: "Mecha",
-    src: art8
+    src: art11
   },
   {
     id: 12,
     title: "X-21 STRIKER BLUEPRINT",
     category: "Mecha",
-    src: art9
+    src: art12
   }
 ];
