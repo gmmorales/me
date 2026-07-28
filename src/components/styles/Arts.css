@@ -3,18 +3,63 @@
 ========================= */
 
 .s-arts.target-section {
-  background: url("../../assets/image/stars.svg"), #e5e5e5;
-  background-repeat: repeat;
+  background: radial-gradient(circle at top, #0a0f1c, #05070d 70%);
   padding: 60px 0;
+  color: #fff;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
-.s-arts__header h3 {
-  background-color: #e5e5e5;
-  font-weight: bold;
-  font-size: 40px;
-  margin-bottom: 20px;
+.s-arts__header h1 {
+  font-weight: 800;
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #39ff14;
+  letter-spacing: 2px;
+}
+
+.s-arts__header p {
+  color: #9aa4b2;
+  max-width: 500px;
+}
+
+/* =========================
+   🎛️ FILTROS
+========================= */
+
+.arts-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.05);
+  color: #9aa4b2;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  color: #fff;
+  border-color: rgba(0,255,150,0.5);
+  box-shadow: 0 0 10px rgba(0,255,150,0.2);
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #00ff88, #00cfff);
+  color: #000;
+  border: none;
+  box-shadow: 0 0 12px rgba(0,255,150,0.5);
 }
 
 /* =========================
@@ -27,6 +72,9 @@
   gap: 24px;
   margin-top: 40px;
   padding-bottom: 40px;
+
+  /* animación */
+  animation: fadeInGrid 0.5s ease forwards;
 }
 
 /* =========================
@@ -35,6 +83,11 @@
 
 .arts-item {
   position: relative;
+
+  animation: fadeItem 0.6s ease forwards;
+  animation-fill-mode: both;
+
+  will-change: transform, opacity;
 }
 
 /* CONTENEDOR PRINCIPAL */
@@ -42,23 +95,18 @@
 .arts-item__inner {
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 14px;
   cursor: pointer;
   background: #000;
-
-  /* 🔥 proporción uniforme tipo Behance */
   aspect-ratio: 4 / 5;
 
-  /* 💎 efecto tarjeta */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  transition: all 0.35s ease;
 }
 
-/* HOVER TARJETA */
-
 .arts-item__inner:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 60px rgba(0, 255, 150, 0.15);
 }
 
 /* =========================
@@ -70,19 +118,16 @@
   height: 100%;
   object-fit: cover;
   display: block;
-
-  transition: transform 0.6s ease, filter 0.6s ease;
+  transition: transform 0.7s ease, filter 0.7s ease;
 }
 
-/* ZOOM + DARKEN */
-
 .arts-item__inner:hover img {
-  transform: scale(1.1);
+  transform: scale(1.12);
   filter: brightness(0.75);
 }
 
 /* =========================
-   🌫️ OVERLAY
+   🌫️ OVERLAY (SIEMPRE ACTIVO)
 ========================= */
 
 .arts-item__inner::after {
@@ -92,17 +137,13 @@
 
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.9),
-    rgba(0, 0, 0, 0.4),
-    transparent
+    rgba(0, 0, 0, 0.85) 15%,
+    rgba(0, 0, 0, 0.4) 45%,
+    transparent 80%
   );
 
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.arts-item__inner:hover::after {
   opacity: 1;
+  transition: opacity 0.4s ease;
 }
 
 /* =========================
@@ -113,49 +154,90 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 100%;
   padding: 18px;
-  color: #fff;
   z-index: 2;
 
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.45s ease;
-}
-
-.arts-item__inner:hover .arts-item__content {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* TITULO */
-
 .arts-item__content h4 {
   margin: 0;
-  font-size: 15px;
-  font-weight: 600;
-}
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
 
-/* CATEGORIA (badge style) */
+  text-shadow: 
+    0 2px 6px rgba(0,0,0,0.9),
+    0 0 12px rgba(0,0,0,0.8);
+
+  letter-spacing: 0.5px;
+}
 
 .arts-item__content p {
-  margin: 6px 0 0;
+  margin-top: 6px;
   font-size: 11px;
+  font-weight: 500;
 
   display: inline-block;
-  padding: 4px 8px;
+  padding: 4px 10px;
   border-radius: 6px;
 
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(4px);
+  background: rgba(0, 255, 140, 0.15);
+  color: #00ff88;
 
-  opacity: 0.9;
+  border: 1px solid rgba(0, 255, 140, 0.4);
+
+  backdrop-filter: blur(6px);
 }
+
+/* HOVER TEXTO */
+
+.arts-item__inner:hover .arts-item__content {
+  transform: translateY(-4px);
+}
+
+/* =========================
+   ✨ ANIMACIONES
+========================= */
+
+@keyframes fadeInGrid {
+  0% {
+    opacity: 0;
+    transform: scale(0.98) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes fadeItem {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* delay escalonado */
+
+.arts-item:nth-child(1) { animation-delay: 0.05s; }
+.arts-item:nth-child(2) { animation-delay: 0.1s; }
+.arts-item:nth-child(3) { animation-delay: 0.15s; }
+.arts-item:nth-child(4) { animation-delay: 0.2s; }
+.arts-item:nth-child(5) { animation-delay: 0.25s; }
+.arts-item:nth-child(6) { animation-delay: 0.3s; }
+.arts-item:nth-child(7) { animation-delay: 0.35s; }
+.arts-item:nth-child(8) { animation-delay: 0.4s; }
 
 /* =========================
    📱 RESPONSIVE
 ========================= */
-
-/* tablets */
 
 @media (max-width: 1024px) {
   .arts-grid {
@@ -164,15 +246,112 @@
   }
 }
 
-/* mobile */
-
 @media (max-width: 600px) {
-  .s-arts__header h3 {
-    font-size: 30px;
+  .s-arts__header h1 {
+    font-size: 28px;
   }
 
   .arts-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
+}
+
+/* =========================
+   🖼️ MODAL GALLERY
+========================= */
+
+.arts-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  backdrop-filter: blur(8px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+  animation: fadeInModal 0.3s ease;
+}
+
+.arts-modal__content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.arts-modal__image {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 10px;
+
+  box-shadow: 0 0 40px rgba(0,255,150,0.2);
+}
+
+/* INFO */
+
+.arts-modal__info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.arts-modal__info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.arts-modal__info p {
+  font-size: 12px;
+  color: #00ff88;
+}
+
+/* BOTONES */
+
+.modal-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.modal-btn:hover {
+  background: rgba(0,255,150,0.3);
+}
+
+.modal-btn.prev {
+  left: -60px;
+}
+
+.modal-btn.next {
+  right: -60px;
+}
+
+/* CERRAR */
+
+.modal-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ANIMACIÓN */
+
+@keyframes fadeInModal {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
