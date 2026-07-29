@@ -10,6 +10,7 @@ import art9 from "../assets/image/ia/art9.jpg";
 import art10 from "../assets/image/ia/art10.jpg";
 import art11 from "../assets/image/ia/art11.jpg";
 import art12 from "../assets/image/ia/art12.jpg";
+import art13 from "../assets/image/ia/art13.jpg";
 
 export const images = [
   {
@@ -39,7 +40,7 @@ export const images = [
   {
     id: 5,
     title: "Alien I",
-    category: "Cyberpunk",
+    category: "Alien",
     src: art5
   },
   {
@@ -51,7 +52,7 @@ export const images = [
   {
     id: 7,
     title: "Alien II",
-    category: "Cyberpunk",
+    category: "Alien",
     src: art7
   },
   {
@@ -70,18 +71,24 @@ export const images = [
     id: 10,
     title: "Planet Kepler-1649c",
     category: "World",
-    src: art7
+    src: art10
   },
   {
     id: 11,
     title: "X-21 STRIKER",
     category: "Mecha",
-    src: art8
+    src: art11
   },
   {
     id: 12,
     title: "X-21 STRIKER BLUEPRINT",
     category: "Mecha",
-    src: art9
+    src: art12
+  },
+  {
+    id: 13,
+    title: "RV3",
+    category: "Car",
+    src: art13
   }
 ];
