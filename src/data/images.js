@@ -11,6 +11,8 @@ import art10 from "../assets/image/ia/art10.jpg";
 import art11 from "../assets/image/ia/art11.jpg";
 import art12 from "../assets/image/ia/art12.jpg";
 import art13 from "../assets/image/ia/art13.jpg";
+import art14 from "../assets/image/ia/art14.jpg";
+
 
 export const images = [
   {
@@ -90,5 +92,12 @@ export const images = [
     title: "RV3",
     category: "Car",
     src: art13
+  },
+  {
+    id: 14,
+    title: "Surprise astronuat",
+    category: "Astronaut",
+    src: art14
   }
+
 ];
