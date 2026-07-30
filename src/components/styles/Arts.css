@@ -355,3 +355,142 @@
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+/* =========================
+   📄 PAGINACIÓN CYBERPUNK FIX
+========================= */
+
+.arts-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* 🔥 FORZAMOS RESET TOTAL */
+
+.arts-pagination .page-btn {
+  all: unset; /* 💥 CLAVE: elimina estilos heredados */
+
+  position: relative;
+  min-width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  color: #00ff88;
+  background: rgba(0, 10, 5, 0.8);
+
+  border: 1px solid rgba(0, 255, 150, 0.35);
+  border-radius: 6px;
+
+  cursor: pointer;
+  overflow: hidden;
+
+  transition: all 0.25s ease;
+}
+
+/* ✨ EFECTO BORDE NEÓN */
+
+.arts-pagination .page-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  border-radius: 6px;
+  box-shadow: inset 0 0 10px rgba(0,255,150,0.3);
+
+  opacity: 0.5;
+}
+
+/* ✨ LINEA SUPERIOR CYBER */
+
+.arts-pagination .page-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #00ff88,
+    transparent
+  );
+
+  opacity: 0.7;
+}
+
+/* HOVER 🔥 */
+
+.arts-pagination .page-btn:hover {
+  color: #000;
+  background: #00ff88;
+
+  box-shadow:
+    0 0 6px #00ff88,
+    0 0 12px #00ff88,
+    0 0 25px rgba(0,255,150,0.7);
+
+  transform: translateY(-2px);
+}
+
+/* ACTIVO */
+
+.arts-pagination .page-btn.active {
+  color: #000;
+  background: linear-gradient(135deg, #00ff88, #00cfff);
+
+  box-shadow:
+    0 0 10px #00ff88,
+    0 0 30px rgba(0,255,150,0.9),
+    inset 0 0 10px rgba(0,0,0,0.5);
+
+  transform: scale(1.1);
+}
+
+/* SCANLINES */
+
+.arts-pagination .page-btn.active::after {
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.2) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  height: 100%;
+  top: 0;
+}
+
+/* FLECHAS */
+
+.arts-pagination .page-btn.arrow {
+  font-size: 18px;
+  padding: 0 14px;
+}
+
+/* DISABLED */
+
+.arts-pagination .page-btn.disabled {
+  opacity: 0.2;
+  pointer-events: none;
+  filter: grayscale(1);
+}
+
+/* CLICK */
+
+.arts-pagination .page-btn:active {
+  transform: scale(0.9);
+}
