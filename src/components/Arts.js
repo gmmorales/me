@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./styles/Arts.css";
 import { images } from "../data/images";
 
 const Arts = () => {
   const [filter, setFilter] = useState("All");
   const [activeIndex, setActiveIndex] = useState(null);
+
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
 
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -45,32 +48,45 @@ const Arts = () => {
   };
 
   /* =========================
-     ⌨️ TECLADO (AGREGADO)
+     ⌨️ TECLADO
   ========================= */
 
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (activeIndex === null) return;
 
-      if (e.key === "Escape") {
-        closeModal();
-      }
-
-      if (e.key === "ArrowRight") {
-        nextImage();
-      }
-
-      if (e.key === "ArrowLeft") {
-        prevImage();
-      }
+      if (e.key === "Escape") closeModal();
+      if (e.key === "ArrowRight") nextImage();
+      if (e.key === "ArrowLeft") prevImage();
     };
 
     window.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, [activeIndex, filteredImages]);
+
+  /* =========================
+     👉 SWIPE MOBILE
+  ========================= */
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    const distance = touchStartX.current - touchEndX.current;
+
+    if (distance > 50) {
+      nextImage(); // swipe izquierda
+    }
+
+    if (distance < -50) {
+      prevImage(); // swipe derecha
+    }
+  };
 
   return (
     <section id="arts" className="s-arts target-section">
@@ -120,7 +136,13 @@ const Arts = () => {
       {/* 🔥 MODAL */}
       {activeIndex !== null && (
         <div className="arts-modal" onClick={closeModal}>
-          <div className="arts-modal__content" onClick={(e) => e.stopPropagation()}>
+          <div
+            className="arts-modal__content"
+            onClick={(e) => e.stopPropagation()}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
             
             <img
               src={filteredImages[activeIndex].src}
