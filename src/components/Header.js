@@ -34,7 +34,7 @@ const Header = () => {
             </li>
             <li id="arts">
               <NavLink activeClassName="current" to="/arts">
-                Arts
+                Digital arts
               </NavLink>
             </li>
             <li id="channels">
