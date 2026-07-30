@@ -44,6 +44,34 @@ const Arts = () => {
     );
   };
 
+  /* =========================
+     ⌨️ TECLADO (AGREGADO)
+  ========================= */
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (activeIndex === null) return;
+
+      if (e.key === "Escape") {
+        closeModal();
+      }
+
+      if (e.key === "ArrowRight") {
+        nextImage();
+      }
+
+      if (e.key === "ArrowLeft") {
+        prevImage();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [activeIndex, filteredImages]);
+
   return (
     <section id="arts" className="s-arts target-section">
 
