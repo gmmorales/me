@@ -97,7 +97,7 @@ export const images = [
     id: 14,
     title: "Surprise astronuat",
     category: "Astronaut",
-    src: art13
+    src: art14
   }
 
 ];
