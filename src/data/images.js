@@ -12,6 +12,8 @@ import art11 from "../assets/image/ia/art11.jpg";
 import art12 from "../assets/image/ia/art12.jpg";
 import art13 from "../assets/image/ia/art13.jpg";
 import art14 from "../assets/image/ia/art14.jpg";
+import art15 from "../assets/image/ia/art15.jpg";
+import art16 from "../assets/image/ia/art16.jpg";
 
 
 export const images = [
@@ -98,6 +100,19 @@ export const images = [
     title: "Surprise astronuat",
     category: "Astronaut",
     src: art14
+  },
+  {
+    id: 15,
+    title: "Marketplace girl I",
+    category: "Girl",
+    src: art15
+  },
+  {
+    id: 16,
+    title: "Marketplace girl II",
+    category: "Girl",
+    src: art16
   }
+
 
 ];
