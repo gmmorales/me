@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/me/static/css/main.c4b61b94.chunk.css",
-    "main.js": "/me/static/js/main.7cb1e453.chunk.js",
-    "main.js.map": "/me/static/js/main.7cb1e453.chunk.js.map",
+    "main.js": "/me/static/js/main.871b5472.chunk.js",
+    "main.js.map": "/me/static/js/main.871b5472.chunk.js.map",
     "runtime-main.js": "/me/static/js/runtime-main.d852e278.js",
     "runtime-main.js.map": "/me/static/js/runtime-main.d852e278.js.map",
     "static/js/2.d58853a4.chunk.js": "/me/static/js/2.d58853a4.chunk.js",
@@ -12,7 +12,7 @@
     "static/js/2.d58853a4.chunk.js.LICENSE.txt": "/me/static/js/2.d58853a4.chunk.js.LICENSE.txt",
     "static/media/Error404.56b5ac10.jpg": "/me/static/media/Error404.56b5ac10.jpg",
     "static/media/Gustavo_Morales_CV.7f43cf6b.pdf": "/me/static/media/Gustavo_Morales_CV.7f43cf6b.pdf",
-    "static/media/art1.aa9cdc85.jpg": "/me/static/media/art1.aa9cdc85.jpg",
+    "static/media/art1.b5e4594a.webp": "/me/static/media/art1.b5e4594a.webp",
     "static/media/art10.37a500cf.jpg": "/me/static/media/art10.37a500cf.jpg",
     "static/media/art11.cf44b8c9.jpg": "/me/static/media/art11.cf44b8c9.jpg",
     "static/media/art12.543f3ec4.jpg": "/me/static/media/art12.543f3ec4.jpg",
@@ -63,6 +63,6 @@
     "static/js/runtime-main.d852e278.js",
     "static/js/2.d58853a4.chunk.js",
     "static/css/main.c4b61b94.chunk.css",
-    "static/js/main.7cb1e453.chunk.js"
+    "static/js/main.871b5472.chunk.js"
   ]
 }
