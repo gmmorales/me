@@ -1,19 +1,19 @@
-import art1 from "../assets/image/ia/art1.jpg";
-import art2 from "../assets/image/ia/art2.jpg";
-import art3 from "../assets/image/ia/art3.jpg";
-import art4 from "../assets/image/ia/art4.jpg";
-import art5 from "../assets/image/ia/art5.jpg";
-import art6 from "../assets/image/ia/art6.jpg";
-import art7 from "../assets/image/ia/art7.jpg";
-import art8 from "../assets/image/ia/art8.jpg";
-import art9 from "../assets/image/ia/art9.jpg";
-import art10 from "../assets/image/ia/art10.jpg";
-import art11 from "../assets/image/ia/art11.jpg";
-import art12 from "../assets/image/ia/art12.jpg";
-import art13 from "../assets/image/ia/art13.jpg";
-import art14 from "../assets/image/ia/art14.jpg";
-import art15 from "../assets/image/ia/art15.jpg";
-import art16 from "../assets/image/ia/art16.jpg";
+import art1 from "../assets/image/ia/art1.webp";
+import art2 from "../assets/image/ia/art2.webp";
+import art3 from "../assets/image/ia/art3.webp";
+import art4 from "../assets/image/ia/art4.webp";
+import art5 from "../assets/image/ia/art5.webp";
+import art6 from "../assets/image/ia/art6.webp";
+import art7 from "../assets/image/ia/art7.webp";
+import art8 from "../assets/image/ia/art8.webp";
+import art9 from "../assets/image/ia/art9.webp";
+import art10 from "../assets/image/ia/art10.webp";
+import art11 from "../assets/image/ia/art11.webp";
+import art12 from "../assets/image/ia/art12.webp";
+import art13 from "../assets/image/ia/art13.webp";
+import art14 from "../assets/image/ia/art14.webp";
+import art15 from "../assets/image/ia/art15.webp";
+import art16 from "../assets/image/ia/art16.webp";
 
 
 export const images = [
@@ -113,6 +113,4 @@ export const images = [
     category: "Girl",
     src: art16
   }
-
-
 ];
