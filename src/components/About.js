@@ -29,29 +29,36 @@ const About = () => {
             </h1>
             <div>
               <p className="about-description">
-                Hola, mi nombre es Gustavo Morales, Full Stack Developer.
+                ¡Hola! Soy Gustavo Mauricio Morales, Ingeniero en Telecomunicaciones, Software Engineer y estudiante avanzado de Ciencia de Datos e Inteligencia Artificial.
               </p>
 
               <p className="about-description">
-                Egresado del Instituto Universitario de la Policía Federal Argentina
-                con el título de Ingeniero en Telecomunicaciones. Cuento con más de trece años
-                de experiencia en el campo de IT y las telecomunicaciones. A lo largo de mi
-                carrera, he trabajado en diversas empresas, ocupando distintos roles. 
-                Actualmente, me desempeño como Desarrollador Full Stack en una compañía
-                internacional, Neoris.
+                Con más de 13 años de trayectoria integral en el ecosistema IT y la industria de la tecnología, me he especializado en diseñar, construir y modernizar soluciones de software de alto impacto. 
+                Mi perfil combina sólidas bases en infraestructura y redes con la pasión por el desarrollo full stack y la innovación impulsada por inteligencia artificial.
               </p>
 
-              <p className="about-description">
-                La comunicación y el trabajo en equipo es para mí esencial para
-                poder crecer como desarrollador. Soy proactivo y metódico,
-                siempre busco nuevos retos y me adapto fácilmente a los cambios,
-                estoy abierto a aprender nuevas tecnologías y lenguajes.
-              </p>
+              <h2 className="about-me">
+                <span className="about-description font-500">
+                  Mi Enfoque Profesional
+                </span>
+              </h2>
+
+              <ul className="about-description">
+                <li><p className="about-description">Desarrollo Full Stack & Arquitectura Backend: Cuento con vasta experiencia liderando y participando en proyectos para grandes organizaciones (como Epam-Neoris, Banco Macro y Grupo Clarín). Mi especialidad incluye arquitecturas sólidas con Java (Spring Boot, Jakarta EE) y Python (Flask, Web2py), además del desarrollo frontend con React.js y Angular.</p></li>
+                <li><p className="about-description">Modernización de Sistemas Heredados: Tengo experiencia práctica resolviendo desafíos técnicos de gran escala, como la migración de aplicaciones legacy empresariales (de IBM WebSphere/Java EE a Java 21 y Jakarta EE 10 en servidores WildFly), refactorización de código, reestructuración de seguridad (Elytron/LDAP) y actualización de patrones de logging.</p></li>
+                <li><p className="about-description">DevOps & Infraestructura: Mi fondo en redes y telecomunicaciones me permite conectar el desarrollo con la infraestructura de forma natural. Manejo entornos de contenedorización (Docker, Podman), integración continua (Jenkins, GitLab CI/CD) y administración de servidores Linux.</p></li>
+                <li><p className="about-description">Ciencia de Datos e Inteligencia Artificial: Actualmente complemento mi experiencia profesional con la Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial. Aplico estas capacidades tanto para el análisis cuantitativo como para optimizar el ciclo de vida del software mediante herramientas de asistencia basada en IA (como GitHub Copilot)</p></li>
+              </ul>
+
+              <h2 className="about-me">
+                <span className="about-description font-500">
+                  Mi Filosofía de Trabajo
+                </span>
+              </h2>
 
               <p className="about-description">
-                Técnologías: Java, Spring boot, python, HTML, CSS, JavaScript, React JS/React Native, Next
-                JS, TypeScript, Bootstrap, SQL, PostgreSQL, Figma, Git.
-              </p>
+                Me apasiona el aprendizaje continuo, la resolución pragmática de problemas y la escritura de código limpio y mantenible. Mi objetivo es conectar el mundo de las telecomunicaciones, la ingeniería de software y los datos para construir productos escalables, seguros y eficientes.
+              </p>              
             </div>
             <hr size="8px" color="white" />
             <h2 className="about-me">
@@ -60,35 +67,40 @@ const About = () => {
               </span>
             </h2>
             <br />
-            <h3 className="about-me center font-500">Front-End</h3>
-            <p className="about-description">
-              Como desarrollador frontend, tengo experiencia en el manejo de
-              HTML y CSS, además del manejo de frameworks y liberías,
-              especialmente React JS. He trabajado en proyectos
-              de escala mediana y grandes, implementando soluciones de código
-              eficientes, trabajado con arquitecturas de software escalables y
-              fácilmente mantenibles.
-            </p>
-            <br />
-            <h3 className="about-me center font-500">Back-End</h3>
-            <p className="about-description">
-              Utilizando Java con Spring boot, python con Flask , puedo crear
-              rutas para APIs REST, protegerlas e implementar bases de datos SQL. 
-              De igualmanera he trabajado con arquitecturas de software escalables
-              y mantenibles, implementando módulos manteniendo separadas las distintas
-              capas de un proyecto.
-            </p>
-            <p className="about-description">
-              He trabajado en proyectos medianos y grandes, desde su
-              planteamiento a su ejecución final, teniendo cada día la
-              oportunidad de aprender cada día acerca de como ayudar al cliente
-              a desarrollar su producto deseado resolviendo cualquier problema
-              presentado. He tenido la oportunidad de trabajar en el desarrollo
-              de aplicaciones bancarias, empleando las mejores prácticas,
-              escribiendo código limpio, legible y mantenible, siempre teniendo
-              en mente optimizar al máximo el rendimiento del prouducto final.
-            </p>
+            <h3 className="about-me">
+              <span className="about-description font-500">
+                Back-End & Arquitectura de Software
+              </span>
+            </h3>
 
+            <ul className="about-description">
+                <li><p className="about-description">Diseño y desarrollo de APIs & Microservicios: Construcción de arquitecturas backend robustas, escalables y seguras utilizando Java (Spring Boot) y Python (Flask, Web2py).</p></li>
+                <li><p className="about-description">Modernización y migración de sistemas legacy: Transición de aplicaciones complejas heredadas (Java EE / WebSphere) hacia estándares modernos como Java 21 y Jakarta EE 10 (WildFly), refactorizando código, migrando dependencias (javax.* a jakarta.*) y actualizando sistemas de autenticación y logging.</p></li>
+                <li><p className="about-description">Integración de servicios y BDD: Conexión con APIs REST, SOAP/WSDL, servicios externos (SAP, pasarelas) y diseño/optimización de bases de datos relacionales (MySQL, SQL) con ORMs como Hibernate.</p></li>
+            </ul>
+
+            <h3 className="about-me">
+              <span className="about-description font-500">
+                Front-End & Experiencia de Usuario
+              </span>
+            </h3>
+            <ul className="about-description">
+              <li><p className="about-description">Desarrollo de interfaces dinámicas y SPA: Creación de aplicaciones web modernas, reactivas y componentes reutilizables utilizando React.js y Angular.</p></li>
+              <li><p className="about-description">Maquetación e integración responsive: Implementación de interfaces intuitivas integrando frontend con servicios RESTful, utilizando JavaScript moderno (ES6+), HTML5, CSS3 y maquetación web adaptativa.</p></li>
+              <li><p className="about-description">Mantenimiento y evolución de interfaces: Adaptación de aplicaciones web existentes (PHP, jQuery, AJAX) hacia tecnologías o estándares más actuales sin interrumpir el servicio.</p></li>
+            </ul>
+
+            <h3 className="about-me">
+              <span className="about-description font-500">
+                DevOps, Infraestructura e Inteligencia Artificial
+              </span>
+            </h3>
+            <ul className="about-description">
+              <li><p className="about-description">Contenedorización y despliegue: Creación y gestión de entornos de desarrollo y producción aislados con Docker y Podman, gestionando variables de entorno y health checks.</p></li>
+              <li><p className="about-description"></p>Pipelines de CI/CD: Automatización de flujos de integración y despliegue continuo con Jenkins y GitLab CI/CD.</li>
+              <li><p className="about-description"></p>Aceleración del desarrollo con IA: Integración de asistentes de Inteligencia Artificial (GitHub Copilot) en el ciclo de vida del desarrollo para agilizar tareas de refactorización, optimización y generación de código.</li>
+            </ul>
+            
             <hr />
             <div className="row s-about__content-bottom">
               <div className="column w-1000-stack cv">
