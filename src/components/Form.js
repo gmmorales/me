@@ -3,24 +3,9 @@ import { validateEmail } from "../utils/utils.js";
 import "./styles/Form.css";
 import swal from "sweetalert";
 
-// const urlApi = "https://portfolio-contact-form-api.vercel.app/api/data";
-const urlApi  = 'https://formsubmit.co/gustavom.morales@gmail.com'
+const URL_API = "https://formsubmit.co/ajax/gustavom.morales@gmail.com";
 
-const Form = () => {
-  const [data, setData] = useState({
-    fullname: "",
-    email: "",
-    message: "",
-  });
-  const [error, setError] = useState(false);
-  const [required, setRequired] = useState({});
-
-  // ==========================================
-  // INICIO CÓDIGO AGREGADO: Lógica PGP
-  // ==========================================
-  const [copied, setCopied] = useState(false);
-
-  const PGP_KEY = `-----BEGIN PGP PUBLIC KEY BLOCK-----
+const PGP_KEY = `-----BEGIN PGP PUBLIC KEY BLOCK-----
 mQINBGmWQcsBEADOEfm1cFa0zg3GH+9fGdFUEfdxy0vYFSNHrPZqkzOWBVtunBCe
 CTt4mF/jQ7soDXjd9qE6O7wzt32DBFzZqL+Zo2O1duyzqCUBvVMepqPHpA/X5R/x
 LW+2sb+9BT8M+O7cVvoF3nBxTcTIh9ZdCXCoqVK4a0ulVHGtjgbJ9suMRoy57Nza
@@ -71,85 +56,99 @@ SoT2BPLMzs0kKWrTo8ZFxwkQFPWfANOuhw==
 =GO7f
 -----END PGP PUBLIC KEY BLOCK-----`.trim();
 
+const Form = () => {
+  const [data, setData] = useState({
+    fullname: "",
+    email: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [required, setRequired] = useState({});
+  const [copied, setCopied] = useState(false);
+
   const handleCopy = () => {
     navigator.clipboard.writeText(PGP_KEY);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
-  // ==========================================
-  // FIN CÓDIGO AGREGADO: Lógica PGP
-  // ==========================================
 
-  const handleChange = (e) => {
-    setData({
-      ...data,
-      [e.target.name]: e.target.value,
-    });
-    setRequired(
-      validate({
-        ...data,
-        [e.target.name]: e.target.value,
-      })
-    );
-  };
-
-  const validate = (data) => {
-    let errors = {};
-    if (!data.fullname) errors.fullname = "Fullname is Required";
-    if (!data.email || !validateEmail(data.email))
-      errors.email = "Email isRequired";
+  const validate = (formData) => {
+    const errors = {};
+    if (!formData.fullname.trim()) errors.fullname = "Fullname is Required";
+    if (!formData.email || !validateEmail(formData.email)) {
+      errors.email = "Email is Required";
+    }
     return errors;
   };
 
-  const handleSubmit = (e) => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    const updatedData = { ...data, [name]: value };
+    setData(updatedData);
+    setRequired(validate(updatedData));
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setError(true);
-    if (
-      data.email.length === 0 ||
-      data.fullname.length === 0 ||
-      required.hasOwnProperty("fullname") ||
-      required.hasOwnProperty("email")
-    ) {
+    
+    const errors = validate(data);
+    setRequired(errors);
+
+    if (Object.keys(errors).length > 0 || !data.fullname || !data.email) {
       return swal({
         title: "Error",
         text: "Debe completar el formulario correctamente antes de enviarlo.",
         icon: "error",
-      }).then(() => setError(false));
-    }
-    const values = JSON.stringify(data);
-    fetch(urlApi, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: values,
-    })
-      .then(() => {
-        swal({
-          title: "Formulario Enviado",
-          text: "Gracias por tus comentarios, me comunicare con usted en la brevedad posible.",
-          icon: "success",
-        }).then(() => {
-          setData({
-            fullname: "",
-            email: "",
-            message: "",
-          });
-          setError(false);
-        });
-      })
-      .catch(() => {
-        swal({
-          title: "Error",
-          text: "Ha ocurrido un error inesperado, por favor intenta nuevamente.",
-          icon: "error",
-        }).then(() => setError(false));
       });
+    }
+
+    setIsSubmitting(true);
+
+    // Mapeo explícito para FormSubmit API AJAX
+    const payload = {
+      name: data.fullname,
+      email: data.email,
+      message: data.message,
+      _replyto: data.email,
+      _subject: `Nuevo mensaje de portafolio: ${data.fullname}`,
+    };
+
+    try {
+      const response = await fetch(URL_API, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      await swal({
+        title: "Formulario Enviado",
+        text: "Gracias por tus comentarios, me comunicaré a la brevedad.",
+        icon: "success",
+      });
+
+      setData({ fullname: "", email: "", message: "" });
+      setRequired({});
+    } catch (err) {
+      swal({
+        title: "Error",
+        text: "Ha ocurrido un error inesperado al enviar el mensaje. Intente nuevamente.",
+        icon: "error",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
-    <> {/* Fragmento necesario para envolver el form y la llave */}
-      <form id="valid-form" onSubmit={handleSubmit}>
+    <>
+      <form id="valid-form" onSubmit={handleSubmit} noValidate>
         <div className="inputs-container">
           <div className="input-div">
             <label className="form-paceholder">Nombre Completo</label>
@@ -159,7 +158,7 @@ SoT2BPLMzs0kKWrTo8ZFxwkQFPWfANOuhw==
               value={data.fullname}
               placeholder="Nombre Completo"
               onChange={handleChange}
-              className={required.hasOwnProperty("fullname") ? "error" : null}
+              className={required.fullname ? "error" : ""}
             />
           </div>
           <div className="input-div">
@@ -170,7 +169,7 @@ SoT2BPLMzs0kKWrTo8ZFxwkQFPWfANOuhw==
               value={data.email}
               placeholder="Email"
               onChange={handleChange}
-              className={required.hasOwnProperty("email") ? "error" : null}
+              className={required.email ? "error" : ""}
             />
           </div>
         </div>
@@ -181,41 +180,29 @@ SoT2BPLMzs0kKWrTo8ZFxwkQFPWfANOuhw==
             name="message"
             value={data.message}
             onChange={handleChange}
-          ></textarea>
+          />
         </div>
         <div className="btn-form-container">
           <button
             type="submit"
             className="btn btn-primary send"
             id="input"
-            disabled={error}
+            disabled={isSubmitting}
           >
-            Enviar
+            {isSubmitting ? "Enviando..." : "Enviar"}
           </button>
         </div>
       </form>
 
-      {/* ========================================== */}
-      {/* INICIO CÓDIGO AGREGADO: Bloque Visual PGP  */}
-      {/* ========================================== */}
       <div className="pgp-container">
         <div className="pgp-header">
           <span>PGP Public Key</span>
-          <button 
-            type="button" 
-            className="btn-copy" 
-            onClick={handleCopy}
-          >
+          <button type="button" className="btn-copy" onClick={handleCopy}>
             {copied ? "¡Copiado!" : "Copiar llave"}
           </button>
         </div>
-        <pre className="pgp-content">
-          {PGP_KEY}
-        </pre>
+        <pre className="pgp-content">{PGP_KEY}</pre>
       </div>
-      {/* ========================================== */}
-      {/* FIN CÓDIGO AGREGADO: Bloque Visual PGP     */}
-      {/* ========================================== */}
     </>
   );
 };
