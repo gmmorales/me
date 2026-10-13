@@ -34,6 +34,17 @@ const Timeline = () => {
               </h3>
               <ul className="timeline-description">
                 <li>
+                  <p className="timeline-description">Proyecto BBVA (Remediación de Vulnerabilidades & AI-Driven Security): Análisis y
+                    corrección de vulnerabilidades SAST y SCA en un amplio pool de aplicaciones
+                    enterprise. Remediación de código e infraestructura en repositorios frontend (Angular,
+                    Vue.js, React) y backend (Java 14, Springboot 3.0). Automatización y aceleración del
+                    ciclo de remediación integrando Dependabot y agentes de IA personalizados basados en
+                    GitHub Copilot. Operativa bajo entornos de alta seguridad (Citrix, Zscaler, VDI) aplicando
+                    mejores prácticas de DevSecOps, incluye trazabilidad e integridad mediante commits
+                    firmados digitalmente (GPG/PGP).
+                  </p>
+                </li>
+                <li>
                   <p className="timeline-description">Proyecto Araucana: Migración de aplicaciones web heredadas
                     (IBM WebSphere / Java EE) a Java 21 y Jakarta EE 10 (WildFly 32). Actualización de namespaces
                     (javax.* a jakarta.*), migración del sistema de autenticación a Elytron/LDAP y actualización de
