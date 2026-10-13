@@ -11,6 +11,7 @@ import typescriptStiker from "../assets/image/typescript-programming-language.sv
 import psqlStiker from "../assets/image/postgresql-icon.svg";
 import bootstrapStiker from "../assets/image/bootstrap-5-1.svg";
 import javaStiker from "../assets/image/java.png"
+import pythonStiker from "../assets/image/python.png"
 import springbootStiker from "../assets/image/springboot.png"
 
 const Skills = () => {
@@ -30,6 +31,12 @@ const Skills = () => {
                 src={javaStiker}
                 title="JAVA"
                 alt="java-logo"
+              />
+              <Skill
+                skill="PYTHON3"
+                src={pythonStiker}
+                title="PYTHON3"
+                alt="python3-logo"
               />
               <Skill
                 skill="SPRINGBOOT"
